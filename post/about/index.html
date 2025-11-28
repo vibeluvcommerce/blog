@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About | VIBELUV Expert Adult Product Guides &amp; Sex Tips</title>
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1764357250632">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="About | VIBELUV Expert Adult Product Guides &amp; Sex Tips - Atom Feed" href="http://localhost:4000/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Welcome to my site. Nice to meet you ！🤝
+🏠 About
+This site is a blog site under Vibeluv, aiming to share knowledge, exp..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://localhost:4000">
+  <img class="avatar" src="http://localhost:4000/images/avatar.png?v=1764357250632" alt="">
+  </a>
+  <h1 class="site-title">
+    VIBELUV Expert Adult Product Guides &amp; Sex Tips
+  </h1>
+  <p class="site-description">
+    This site is a blog site under VIBELUV, aiming to share knowledge, experience and insights about adult products and sex.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          Home
+        </a>
+      
+    
+      
+        <a href="/archives/" class="menu">
+          Archives
+        </a>
+      
+    
+      
+        <a href="/tags/" class="menu">
+          Tags
+        </a>
+      
+    
+      
+        <a href="/post/about/" class="menu">
+          About
+        </a>
+      
+    
+      
+        <a href="/games/" class="menu">
+          Games
+        </a>
+      
+    
+      
+        <a href="/hot/" class="menu">
+          Shop
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              About
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-01-25
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>Welcome to my site. Nice to meet you ！🤝</p>
+<h2 id="about">🏠 About</h2>
+<p>This site is a blog site under Vibeluv, aiming to share knowledge, experience and insights about adult products and sex.</p>
+<h2 id="blogger">👨‍💻 Blogger</h2>
+<p>I'm Vibeluv, an independent site focusing on adult products. I love the joy of sex and want to share my experiences and insights through my blog to help others better understand and enjoy sex.</p>
+<h2 id="hobbies">⛹ Hobbies</h2>
+<p>My hobbies include reading, writing and exploring different aspects of sex. I believe that sex is not just about physical fulfillment, but also about spiritual enjoyment and connection.</p>
+<h2 id="contact-me">📬 Contact me</h2>
+<p>If you have any questions or suggestions, feel free to contact me at service@vibeluv.com. I'll respond to your message as soon as I can.</p>
+<p>Thank you for visiting and I hope my blog has provided you with valuable information and insights. If you have any questions or suggestions, please feel free to contact me. Thanks again for visiting!</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#about">🏠 About</a></li>
+<li><a href="#blogger">👨‍💻 Blogger</a></li>
+<li><a href="#hobbies">⛹ Hobbies</a></li>
+<li><a href="#contact-me">📬 Contact me</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  ©2022&nbsp; <a href="https://www.vibeluv.com/" target="_blank">VIBELUV</a>. All Rights Reserved.
+  <a class="rss" href="http://localhost:4000/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
